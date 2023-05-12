@@ -6,7 +6,7 @@ module.exports.create = (req, res) => {
             res.json({ user })
         })
         .catch((err) => {
-            res.json({ message: 'Unable to create', error: err })
+            res.json({ message: 'Error', error: err })
         });}
  
 module.exports.getAll = (req, res) => {
@@ -38,7 +38,7 @@ module.exports.update = (req, res) => {
             res.json({ user })
         })
         .catch((err) => {
-            res.json({ message: 'Unable to update', error: err })
+            res.json({ message: 'Unable to Update', error: err })
         });}
  
 module.exports.delete = (req, res) => {
